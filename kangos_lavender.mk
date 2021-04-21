@@ -22,9 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit GoogleCamera
-$(call inherit-product, vendor/xiaomi/GoogleCamera/Camera.mk)
-
 # Inherit some common KangOS stuff.
 $(call inherit-product, vendor/kangos/config/common.mk)
 
