@@ -1,0 +1,24 @@
+[
+    {
+        "repository":   "device_xiaomi_sdm660-common",
+        "target_path":  "device/xiaomi/sdm660-common"
+    },
+    {
+        "remote":       "github",
+        "repository":   "zaidkhan0997/android_vendor_xiaomi_lavender",
+        "target_path":  "vendor/xiaomi/lavender",
+        "branch":     "eleven"
+    },
+    {
+        "remote":       "github",
+        "repository":   "zaidkhan0997/android_vendor_xiaomi_sdm660-common",
+        "target_path":  "vendor/xiaomi/sdm660-common",
+        "branch":     "eleven"
+    },
+    {
+        "remote":       "github",
+        "repository":   "NotZeetaa/nexus_kernel_lavender",
+        "target_path":  "kernel/xiaomi/sdm660",
+        "branch":     "eas"
+    }
+]
