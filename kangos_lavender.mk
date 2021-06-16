@@ -19,16 +19,38 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Inherit GoogleCamera
+$(call inherit-product, vendor/xiaomi/GoogleCamera/Camera.mk)
+
+# Inherit some common KangOS stuff.
+$(call inherit-product, vendor/kangos/config/common.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official Stuff
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED = true
+
+# KangOS Stuff
+KANGOS_BUILDTYPE := OFFICIAL
+USE_GAPPS := true
+TARGET_INCLUDE_AOSP_REPLACEMENT := true
+
+# KangOS Props
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.kangos.maintainer=zαι∂кнαи0997 \
+  ro.kangos.cpu=SDM660
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := kangos_lavender
 PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
