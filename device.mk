@@ -24,6 +24,8 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
+# Inherit Dirac
+$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
 
 # Inherit GoogleCamera
 $(call inherit-product-if-exists, vendor/xiaomi/GoogleCameraMod/Camera.mk)
