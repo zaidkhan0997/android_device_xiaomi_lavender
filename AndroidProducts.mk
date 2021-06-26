@@ -23,9 +23,9 @@
 
 # Inherit Redmi Note 7 Carbon device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_lavender.mk
+    $(LOCAL_DIR)/kangos_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_lavender-eng \
-    revengeos_lavender-userdebug \
-    revengeos_lavender-user
+    kangos_lavender-eng \
+    kangos_lavender-userdebug \
+    kangos_lavender-user
